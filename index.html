@@ -1,0 +1,142 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Festive&family=Hurricane&family=Inspiration&family=Palette+Mosaic&family=Rock+3D&family=Smokum&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+        <div>
+            <h2 id="heading" style="color: red; font-family: 'Inspiration', cursive; white-space: pre-line;">CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</h2>
+            <br> <br>
+            <h4 style="font-size: 30px; font-family: 'Hurricane', cursive;">Google Lens<img src="gl.png" id="image"></h4>
+            <br> <br>
+            <b style="color: red; font-size: 30px; font-family: 'Rock 3D', cursive; white-space: pre-line;">VS</b>
+            <br> <br>
+            <h4 class="btn btn-primary" style="font-size: 30px; font-family: 'Hurricane', cursive;">MobileNet</h4>
+            <hr>
+        </div>
+        <ol>
+            <div class="test_image_and_result col-xs-12" style="background-color: grey; height: 100%; border-radius: 20px; margin: 0px;">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white; font-size: 30px;">Test Image:- </b>
+                    <img src="bottle.jpeg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">GOOGLE LENS</b> -
+                    <span> This gave me accurate answer </span>
+                </h5>     
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">Mobilenet Model</b> -
+                    <span> This gave me a correct but not acuurate answer </span>
+                </h5>
+                <br> <br>
+                <h5 class="mini_result col-xs-12">
+                    <h4 style="color: white; font-weight: bold;">Result - </h4>
+                    <hr>
+                    <h4 style="color: white; font-weight: bold;">Google lens was more accurate</h4>
+                </h5>
+            </div>
+            <hr> <br>
+            <div class="test_image_and_result col-xs-12" style="background-color: grey; height: 100%; border-radius: 20px; margin: 0px;">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white; font-size: 30px;">Test Image:- </b>
+                    <img src="61iYomOyJ-L._SL1500_-removebg-preview.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">GOOGLE LENS</b> -
+                    <span> This gave me accurate answer </span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">Mobilenet Model</b> -
+                    <span> This gave me a correct but not acuurate answer </span>
+                </h5>
+                <br> <br>
+                <h5 class="mini_result col-xs-12">
+                    <h4 style="color: white; font-weight: bold;">Result - </h4>
+                    <hr>
+                    <h4 style="color: white; font-weight: bold;">Google lens was more accurate</h4>
+                </h5>
+            </div>
+            <hr> <br>
+            <div class="test_image_and_result col-xs-12" style="background-color: grey; height: 100%; border-radius: 20px; margin: 0px;">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white; font-size: 30px;">Test Image:- </b>
+                    <img src="71SvV17lq-L._SX569_-removebg-preview.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">GOOGLE LENS</b> -
+                    <span> This gave me accurate answer </span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">Mobilenet Model</b> -
+                    <span> This gave me a correct but not acuurate answer </span>
+                </h5>
+                <hr>
+                <h5 class="mini_result col-xs-12">
+                    <h4 style="color: white; font-weight: bold;">Result - </h4>
+                    <hr>
+                    <h4 style="color: white; font-weight: bold;">Google lens was more accurate</h4>
+                </h5>
+            </div>
+            <hr> <br>
+            <div class="test_image_and_result col-xs-12" style="background-color: grey; height: 100%; border-radius: 20px; margin: 0px;">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white; font-size: 30px;">Test Image:- </b>
+                    <img src="computer_mouse.png.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">GOOGLE LENS</b> -
+                    <span> This gave me accurate answer </span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">Mobilenet Model</b> -
+                    <span> This gave me accurate answer </span>
+                </h5>
+                <hr>
+                <h5 class="mini_result col-xs-12">
+                    <h4 style="color: white; font-weight: bold;">Result - </h4>
+                    <hr>
+                    <h4 style="color: white; font-weight: bold;">Both gave me a accurate answer</h4>
+                </h5>
+            </div>
+            <hr> <br>
+            <div class="test_image_and_result col-xs-12" style="background-color: grey; height: 100%; border-radius: 20px; margin: 0px;">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white; font-size: 30px;">Test Image:- </b>
+                    <img src="Clock.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">GOOGLE LENS</b> -
+                    <span> This gave me accurate answer </span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12" style="background-color: white; font-size: 22px; border-radius: 20px;">
+                    Output on <b style="color: blueviolet;">Mobilenet Model</b> -
+                    <span> This gave me accurate answer </span>
+                </h5>
+                <hr>
+                <h5 class="mini_result col-xs-12">
+                    <h4 style="color: white; font-weight: bold;">Result - </h4>
+                    <hr>
+                    <h4 style="color: white; font-weight: bold;">Both gave me a accurate answer</h4>
+                </h5>
+            </div>
+        </ol>
+        <br> <hr>
+        <h3 style="border-radius: 20px; background-color: deeppink; color: darkviolet;"> I found that <b>GOOGLE LENS</b> was more accurate 3 times more than <b>MOBILENET</b>. <br>
+            So, according to my case study <b>GOOGLE LENS</b> is more accurate. </h3>
+        <div class="copy_right_footer">
+            Developed By:- Unbelievable Nilanshu
+        </div>
+    </center>
+</body>
+
+</html>
